@@ -1,0 +1,662 @@
+/* ESTILO RETRO WINDOWS XP LUNA THEME */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: #000;
+  color: #000;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xp-desktop-screen {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #000;
+}
+
+/* LAYOUT DIVIDIDO */
+.split-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: calc(100vh - 34px);
+}
+
+@media (max-width: 1024px) {
+  .split-container {
+    flex-direction: column;
+  }
+}
+
+/* =========================================
+   1. PANTALLA DE LOGON WINDOWS XP (IZQUIERDA)
+========================================= */
+.logon-panel {
+  flex: 0 0 45%;
+  background: radial-gradient(circle at 40% 40%, #5a88e5 0%, #002d96 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid #ff7b00;
+  position: relative;
+  box-shadow: inset -5px 0 20px rgba(0,0,0,0.4);
+}
+
+.logon-top-stripe {
+  height: 24px;
+  background: #001f66;
+  border-bottom: 2px solid #ff7b00;
+}
+
+.logon-content {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logon-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ms-brand {
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.xp-brand-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+}
+
+.xp-text {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.xp-tag {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff6600;
+  font-style: italic;
+}
+
+.logon-subtitle {
+  color: #cfe1ff;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.logon-divider {
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+  margin-bottom: 35px;
+}
+
+/* TARJETA DE USUARIO LOGON */
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(180deg, #184ea8 0%, #083480 100%);
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 2px solid #00c0ff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(255,255,255,0.4);
+  max-width: 440px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-card:hover {
+  border-color: #ff9900;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), inset 0 1px 2px rgba(255,255,255,0.6);
+}
+
+.avatar-frame {
+  width: 82px;
+  height: 82px;
+  border-radius: 6px;
+  border: 3px solid #ffaa00;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  overflow: hidden;
+  background: #000;
+  flex-shrink: 0;
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-fullname {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+}
+
+.user-username {
+  color: #c7dbff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.user-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border-left: 3px solid #ff7b00;
+}
+
+.role-text {
+  color: #e6f0ff;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.flag-icon {
+  font-size: 12px;
+}
+
+/* FOOTER LOGON */
+.logon-footer {
+  background: #00184d;
+  border-top: 2px solid #ff7b00;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.turn-off-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.power-icon {
+  background: #d82b13;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  border: 1px solid #ff7d70;
+}
+
+.logon-footer-tip {
+  font-size: 10px;
+  color: #b0c9f7;
+  text-align: right;
+  line-height: 1.3;
+}
+
+/* =========================================
+   2. ESCRITORIO BLISS & EXPLORER (DERECHA)
+========================================= */
+.desktop-panel {
+  flex: 0 0 55%;
+  position: relative;
+  background: url('https://upload.wikimedia.org/wikipedia/en/2/27/Bliss_%28Windows_XP%29.png') no-gradient center center / cover no-repeat;
+  background-color: #245edb;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bliss-wallpaper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* VENTANA XP */
+.xp-window {
+  width: 100%;
+  max-width: 680px;
+  background: #ece9d8;
+  border-radius: 8px 8px 0 0;
+  border: 3px solid #0055ea;
+  box-shadow: 4px 6px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.window-titlebar {
+  background: linear-gradient(180deg, #0a64e1 0%, #2076f0 8%, #0855dc 40%, #0042c0 88%, #0855dc 100%);
+  padding: 5px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-shadow: 1px 1px 2px #002275;
+}
+
+.titlebar-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.title-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.window-controls {
+  display: flex;
+  gap: 3px;
+}
+
+.win-btn {
+  width: 21px;
+  height: 21px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, #3d95ff 0%, #0053e1 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.win-btn.close {
+  background: linear-gradient(180deg, #e76d54 0%, #cc3311 100%);
+  border-color: #ffd2cc;
+}
+
+.win-btn:active {
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.window-menubar {
+  background: #ece9d8;
+  border-bottom: 1px solid #d0ccb8;
+  padding: 3px 8px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.window-menubar span {
+  cursor: pointer;
+}
+
+.win-flag-logo {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+}
+
+.window-body {
+  background: #ffffff;
+  padding: 16px;
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+}
+
+/* GRID DE CARPETAS / BADGES */
+.folders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+  gap: 14px 10px;
+  margin-bottom: 18px;
+  padding: 10px 5px;
+  background: #fbfbfd;
+  border: 1px solid #e0dfdb;
+  border-radius: 4px;
+}
+
+.desktop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 3px;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.desktop-item:hover {
+  background: #e5f0ff;
+  outline: 1px dotted #316ac5;
+}
+
+/* CARPETAS XP EN CSS PURO CON BADGE RETRO */
+.xp-folder {
+  width: 48px;
+  height: 38px;
+  background: linear-gradient(180deg, #fceb92 0%, #e8bc3d 100%);
+  border: 1px solid #b8860b;
+  border-radius: 2px 6px 3px 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+  margin-bottom: 5px;
+}
+
+.xp-folder::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 22px;
+  height: 7px;
+  background: #fceb92;
+  border: 1px solid #b8860b;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+}
+
+.folder-badge {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  z-index: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* COLORES ESPECÍFICOS DE BADGES */
+.badge-html { background: #e34f26; }
+.badge-css { background: #1572b6; }
+.badge-js { background: #f7df1e; color: #000; text-shadow: none; }
+.badge-react { background: #0088cc; }
+.badge-nextjs { background: #000000; }
+.badge-docker { background: #2496ed; }
+.badge-aws { background: #ff9900; }
+.badge-vite { background: #646cff; }
+.badge-npm { background: #cb3837; }
+.badge-vsc { background: #007acc; }
+.badge-vps { background: #336791; }
+.badge-prisma { background: #0c344b; }
+.badge-ts { background: #3178c6; }
+.badge-cicd { background: #2088ff; }
+.badge-mysql { background: #4479a1; }
+
+.item-name {
+  font-size: 11px;
+  color: #000;
+  margin-top: 2px;
+  word-break: break-word;
+}
+
+/* PANELES INFERIORES: EXPLORING & CONNECT */
+.bottom-modules {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .bottom-modules {
+    flex-direction: column;
+  }
+}
+
+.exploring-box {
+  flex: 1;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.construction-folder {
+  width: 44px;
+  height: 38px;
+  background: repeating-linear-gradient(
+    45deg,
+    #f59e0b,
+    #f59e0b 6px,
+    #111827 6px,
+    #111827 12px
+  );
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #78350f;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  flex-shrink: 0;
+}
+
+.hard-hat {
+  font-size: 18px;
+}
+
+.exploring-info strong {
+  display: block;
+  font-size: 11px;
+  color: #854d0e;
+}
+
+.exploring-info p {
+  font-size: 10px;
+  color: #555;
+  margin-top: 2px;
+}
+
+/* LET'S CONNECT */
+.connect-box {
+  flex: 1.2;
+  background: #f4f6fa;
+  border: 1px solid #c9d2e3;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.connect-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1f3660;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.connect-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.xp-connect-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #b2bfd8;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  color: #111;
+  transition: all 0.15s ease;
+}
+
+.xp-connect-btn:hover {
+  background: #e8f0fe;
+  border-color: #2b6cb0;
+}
+
+.connect-tag {
+  font-weight: 700;
+  color: #2b6cb0;
+}
+
+.connect-val {
+  color: #444;
+  margin-left: auto;
+}
+
+/* CONTRIBUTIONS SNAKE MODULE */
+.snake-module {
+  background: #f0f4f9;
+  border: 1px solid #c0d1e5;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.snake-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a4270;
+  margin-bottom: 6px;
+}
+
+.canvas-container {
+  background: #ffffff;
+  border: 1px solid #a4b9cf;
+  border-radius: 3px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+#snakeCanvas {
+  width: 100%;
+  height: 100px;
+  background: #ebedf0;
+  display: block;
+}
+
+/* =========================================
+   3. TASKBAR LUNA WINDOWS XP
+========================================= */
+.xp-taskbar {
+  height: 34px;
+  background: linear-gradient(180deg, #1f68db 0%, #2989ee 5%, #185ec7 12%, #1251bd 85%, #0f449e 100%);
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  border-top: 1px solid #53a3ff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+  z-index: 100;
+}
+
+.xp-start-btn {
+  height: 28px;
+  background: linear-gradient(180deg, #389e38 0%, #44b944 6%, #2e962e 14%, #1e7a1e 85%, #136113 100%);
+  border: 1px solid #165c16;
+  border-radius: 0 8px 8px 0;
+  padding: 0 14px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.6);
+}
+
+.start-flag {
+  color: #ffcc00;
+  font-size: 15px;
+}
+
+.start-label {
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 13px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.taskbar-items {
+  flex: 1;
+  display: flex;
+  padding: 0 10px;
+}
+
+.taskbar-tab {
+  background: linear-gradient(180deg, #1c52b5 0%, #174092 100%);
+  color: #fff;
+  border: 1px solid #0d2f70;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.5);
+  max-width: 200px;
+}
+
+.taskbar-tab img {
+  width: 14px;
+  height: 14px;
+}
+
+.xp-systray {
+  background: linear-gradient(180deg, #0e8ce6 0%, #0d7cd3 15%, #0959a4 100%);
+  border-left: 1px solid #0f4e8c;
+  height: 100%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 11px;
+}
