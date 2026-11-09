@@ -1,22 +1,38 @@
-# 🖥️ Windows XP Profile & Portfolio - BlurTrace
+<div align="center">
+  <img src="./assets/windows-xp-profile.png" alt="BlurTrace Windows XP Profile" width="100%">
+</div>
 
-Este repositorio contiene una presentación de portafolio web interactiva inspirada en la pantalla de bienvenida y el escritorio de **Windows XP**.
+<br>
 
-## 🚀 Vista previa en vivo
-Puedes publicar este repositorio de forma gratuita usando **GitHub Pages**:
-1. Sube estos archivos a tu repositorio (ejemplo: `BlurTrace/xp-portfolio` o tu repositorio especial de perfil).
-2. Ve a **Settings** > **Pages**.
-3. En **Branch**, selecciona `main` y la carpeta `/ (root)`.
-4. Guarda y tendrás tu enlace público listo.
+<div align="center">
 
-## 📂 Estructura de archivos
-- `index.html`: Estructura semántica con la pantalla Logon XP, el usuario, la cuadrícula de tecnologías y los accesos.
-- `style.css`: Estilos retro auténticos de Windows XP (Tema Luna, Bliss, degradados y badges).
-- `script.js`: Lógica del reloj de la barra de tareas, interactividad de carpetas y el juego interactivo Snake recorriendo los commits de GitHub.
+[![Live Demo](https://img.shields.io/badge/Windows_XP-Live_Interactive_Desktop-0055ea?style=for-the-badge&logo=windows-xp&logoColor=white)](https://blurtrace.github.io/xp-portfolio/)
+[![Email](https://img.shields.io/badge/Email-jandyjpv%40gmail.com-c14436?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jandyjpv@gmail.com)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-+57_314_845_7565-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/573148457565)
+[![Instagram](https://img.shields.io/badge/Instagram-@blurtrace-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/blurtrace/)
 
-## 🖼️ Cómo cambiar tu foto
-En `index.html`, ubica la línea:
-```html
-<img id="user-avatar" src="https://github.com/BlurTrace.png" alt="Jandy José Peña Vásquez">
-```
-Puedes dejar tu foto actual de GitHub o colocar cualquier imagen tuya reemplazando el `src`.
+</div>
+
+---
+
+### 🧠 A Little About Me
+
+- 🔍 I like to understand things from the ground up — what each part does, why it works, and how everything fits together.
+- 📚 I believe that understanding the fundamentals is just as important as learning new technologies.
+- 🧩 I enjoy solving problems, experimenting with code, and learning by building projects.
+- 🌱 Always learning, always improving, and always looking for new challenges.
+- 🎯 My goal is to become a well-rounded developer who writes clean, maintainable, and meaningful code.
+
+---
+
+### 🐍 Contribution Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BlurTrace/BlurTrace/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BlurTrace/BlurTrace/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/BlurTrace/BlurTrace/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+
+---
+
+⚡ *"Learn the fundamentals, understand the process, and build something meaningful."* 🚀
