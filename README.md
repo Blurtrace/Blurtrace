@@ -15,7 +15,6 @@ I enjoy turning ideas into functional applications, solving problems, and contin
 
 <div align="center">
 
-<img src="./assets/xp-profile.svg" alt="BlurTrace - Windows XP profile" width="100%" />
 
 <br/>
 
@@ -58,6 +57,10 @@ I enjoy turning ideas into functional applications, solving problems, and contin
 
 
 *"Learn the fundamentals, understand the process, and build something meaningful."* 🚀
+
+<img src="./assets/xp-profile.svg" alt="BlurTrace - Windows XP profile" width="100%" />
+
+
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark-snake-animation.svg"/>
