@@ -72,13 +72,6 @@ I enjoy turning ideas into functional applications, solving problems, and contin
 
 ---
 
-## Languages Activity
-
-<p align="center">
-  <img src="./metrics.languages.svg" />
-</p>
-
----
 
 ---
 
