@@ -1,0 +1,37 @@
+name: Generate Snake Animation
+
+on:
+  # Se actualiza solo cada 12 horas
+  schedule:
+    - cron: "0 */12 * * *"
+  # Botón "Run workflow" en la pestaña Actions
+  workflow_dispatch:
+  # Y cada vez que subas cambios a main
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write   # necesario para commitear los SVG generados
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/light-snake-animation.svg
+            assets/dark-snake-animation.svg?palette=github-dark
+
+      - name: Commit & Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update snake contribution grid"
+          file_pattern: "assets/*.svg"
