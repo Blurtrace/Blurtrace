@@ -64,6 +64,24 @@ I enjoy turning ideas into functional applications, solving problems, and contin
 
 ---
 
+## GitHub Stats
+
+<p align="center">
+  <img height="180" src="https://github-stats-extended.vercel.app/api?username=BlurTrace&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+</p>
+
+---
+
+## Languages Activity
+
+<p align="center">
+  <img src="./metrics.languages.svg" />
+</p>
+
+---
+
+---
+
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark-snake-animation.svg"/>
